@@ -10,6 +10,9 @@
 <body>
 	<%= render 'layouts/header' %>
 	<div class="container">
+			<% flash.each do |name, msg| %> <!-- for each flash do som and the variables are name and msg becaouse the flash has a name and a msg. Flash is a msg that come up when a user do som like sign up, access a page and than vanish, shous only once and when you refresh the page is gone					-->
+				<%= content_tag(:div, msg, class: "alert alert-info") %>
+			<% end %>
 	<%= yield %>
 	</div>
 </body>
