@@ -28,6 +28,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', github: 'twbs/bootstrap-sass', branch: 'master' #now is in our gem file but its not yet included in our application
 gem 'devise', '~>3.2.2' 
+gem 'paperclip', '~>3.0'
 
 group :development, :test do # this means that we are using the sqlite3 gem database in the development on our compjuter and testing
 	gem 'sqlite3'
